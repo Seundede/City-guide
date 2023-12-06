@@ -13,7 +13,7 @@ export default function Home() {
         <Formik
           initialValues={{ did: "" }}
           onSubmit={async (values, { setSubmitting }) => {
-            let james = values.did;
+     router.push("/home");
             // try {
             //   const { web5, did: james } = await Web5.connect();
             //   router.push("/home");
@@ -36,7 +36,7 @@ export default function Home() {
                 onBlur={handleBlur}
               ></Input>
               <p>
-                Don't have a DID?{" "}
+                Don&apos;t have a DID?{" "}
                 <span
                   onClick={() => router.push("/signup")}
                   className="underline"

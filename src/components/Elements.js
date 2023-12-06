@@ -15,7 +15,9 @@ const Input = ({ label, ...props }) => {
         {...props}
         autoComplete="off"
       />
-      {meta.touched && meta.error ? <ErrorDisplay error={meta.error} /> : null}
+      {meta.touched && meta.error ? (
+        <p className="text-sm text-red-400"> {meta.error}</p>
+      ) : null}
     </div>
   );
 };
