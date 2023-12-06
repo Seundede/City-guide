@@ -1,6 +1,6 @@
 import { Button } from "@/components/Elements";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import NavigationBar from "@/components/NavigationBar";
 import Image from "next/image";
 import React from "react";
 
@@ -33,7 +33,7 @@ const home = () => {
   ];
   return (
     <div className="w-screen overflow-x-hidden">
-      <Navbar />
+      <NavigationBar />
       <section className=" h-[calc(100vh-64px)] relative">
         <Image
           src="/images/home_page_image.jpg"
@@ -53,8 +53,8 @@ const home = () => {
           <Button>Explore Now</Button>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-6 lg:px-8 w-full my-5 ">
-        <h2 className="my-10 uppercase text-lg">
+      <section className="mx-auto max-w-7xl px-6 lg:px-12 w-full my-5 ">
+        <h2 className="my-10 uppercase text-lg ">
           Explore Diverse Guide Options
         </h2>
         <div className="flex flex-wrap gap-4 mb-12">

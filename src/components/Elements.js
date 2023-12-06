@@ -21,9 +21,9 @@ const Input = ({ label, ...props }) => {
     </div>
   );
 };
-const Button = ({ children }) => {
+const Button = ({ children, onClick }) => {
   return (
-    <button className="text-base px-4 text-white py-3 border rounded-lg cursor-pointer bg-black">
+    <button className="text-base px-4 text-white py-3 border rounded-lg cursor-pointer bg-black" onClick={onClick}>
       {children}
     </button>
   );
